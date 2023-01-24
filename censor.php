@@ -1,7 +1,7 @@
 <p>
     Your text:
     <?php
-    $userParagraph = $_GET['paragraph'];
+    $userParagraph = $_POST['paragraph'];
     echo $userParagraph;
     ?>
 </p>
@@ -14,8 +14,8 @@
 <p>
     Your text with censored word:
     <?php
-    $censoredWord = $_GET['censor'];
-    $newUserParagraph = str_replace($censoredWord, '***', $userParagraph);
+    $censoredWord = $_POST['censor'];
+    $newUserParagraph = str_replace(strtolower($censoredWord), '***', strtolower($userParagraph));
     echo $newUserParagraph;
     ?>
 </p>

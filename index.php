@@ -13,7 +13,7 @@
         <h1>Badwords</h1>
     </header>
     <main>
-        <form action="./censor.php" method="GET">
+        <form action="./censor.php" method="POST">
             <label for="paragraph">Type text</label>
             <input type="text" id="paragraph" name="paragraph">
             <label for="censor">Type the word to censor</label>
